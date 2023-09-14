@@ -5,6 +5,8 @@ import { BsGoogle } from 'react-icons/bs'
 
 const Login = () => {
 
+  const { loginGoogle } = useAuth();
+
   return (
     <div className='pageLogin'>
         <header>
@@ -15,7 +17,7 @@ const Login = () => {
                 <h2>Seu Melhor Gerenciador de Tarefas</h2>
                 <p>Organize suas tarefas de forma fácil</p>
                 <p className='cto'>Comece agora mesmo!</p>
-                <button className="buttonLoginGoogle" type="button"> <BsGoogle /> Logar com o Google</button>
+                <button onClick={loginGoogle} className="buttonLoginGoogle" type="button"> <BsGoogle /> Logar com o Google</button>
             </div>
         </main>
     </div>

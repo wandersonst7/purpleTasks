@@ -1,12 +1,36 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
+import {  useGoogleLogin  }  from  '@react-oauth/google' ;
 
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({children}) => {
 
-    const [teste, setTeste] = useState("olá");
+    const [token, setToken] = useState("")
 
-    return <AuthContext.Provider value={{ teste }}>
+    const saveData = (response) => {
+        setToken(response.access_token)
+        localStorage.setItem('googleToken', response.access_token);
+    }
+
+    const loginGoogle = useGoogleLogin({
+        onSuccess: credentialResponse  => saveData(credentialResponse)
+    });
+
+    const logout = () => {
+        setToken("");
+        localStorage.removeItem('googleToken');
+    }
+
+    useEffect( () => {
+        const getToken = localStorage.getItem('googleToken');
+
+        if(getToken){
+            setToken(getToken);
+        }
+
+    }, [])
+
+    return <AuthContext.Provider value={{ loginGoogle, logout, token, name }}>
         {children}
     </AuthContext.Provider>
 }
