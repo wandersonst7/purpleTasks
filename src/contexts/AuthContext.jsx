@@ -19,6 +19,7 @@ export const AuthContextProvider = ({children}) => {
     const logout = () => {
         setToken("");
         localStorage.removeItem('googleToken');
+        localStorage.removeItem('tasksStoraged')
     }
 
     useEffect( () => {
