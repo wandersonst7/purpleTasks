@@ -1,9 +1,12 @@
 import './NotFound.css'
 
 const NotFound = () => {
+
+  document.title = "Not Found"
+
   return (
-    <div>
-        <h1>Not Found</h1>
+    <div className='notFoundPage'>
+        <h1>404</h1>
         <p>Esta página não existe!</p>
     </div>
   )

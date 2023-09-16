@@ -12,6 +12,8 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
 
+  document.title = "Home"
+
   const { logout } = useAuth();
   const { tasks, deleteTask } = useTasks();
 

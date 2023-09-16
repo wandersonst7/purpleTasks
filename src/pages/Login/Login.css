@@ -1,28 +1,28 @@
-.pageLogin{
+.loginPage{
     background-color: #27213B;
     height: 100vh;
 }
 
-.pageLogin > header{
+.loginPage > header{
     background-color: #fff;
     display: flex;
     justify-content: center;
     padding: 44px 0px;
 }
 
-.pageLogin > header > h1 {
+.loginPage > header > h1 {
     color: #7A007A;
     text-shadow: 1px 1px 3px rgba(122, 0, 122, 0.25);
 }
 
-.pageLogin > main{
+.loginPage > main{
     height: calc(100% - 160px);
     display: flex;
     justify-content: center;
     align-items: center;   
 }
 
-.pageLogin > main > div{
+.loginPage > main > div{
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -30,11 +30,11 @@
     text-align: center;
 }
 
-.pageLogin > main > div > p{
+.loginPage > main > div > p{
     font-size: 24px;
 }
 
-.pageLogin .cto{
+.loginPage .cto{
     color: #381750;
     background-color: #fff;
     font-weight: bold;
@@ -46,7 +46,7 @@
     padding: 10px;
 }
 
-.pageLogin .buttonLoginGoogle {
+.loginPage .buttonLoginGoogle {
     color: #fff;
     background-color: #7A007A;
     border: 5px solid #7A007A;    
@@ -62,27 +62,27 @@
     transition: .5s ease-in-out;
 }
 
-.pageLogin .buttonLoginGoogle:hover {
+.loginPage .buttonLoginGoogle:hover {
     color: #7A007A;
     background-color: #fff;
 }
 
 /* Responsive */
 @media(max-width: 767px){
-    .pageLogin > main{
+    .loginPage > main{
         padding: 0px 24px;
     }
 
-    .pageLogin > main > div > p{
+    .loginPage > main > div > p{
         font-size: 16px;
     }
     
-    .pageLogin .cto{
+    .loginPage .cto{
         font-size: 14px;
         margin-bottom: 44px;
     }
     
-    .pageLogin .buttonLoginGoogle {
+    .loginPage .buttonLoginGoogle {
         padding: 5px 10px;
         font-size: 16px;
     }

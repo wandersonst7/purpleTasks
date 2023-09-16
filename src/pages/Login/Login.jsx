@@ -5,10 +5,12 @@ import { BsGoogle } from 'react-icons/bs'
 
 const Login = () => {
 
+  document.title = "Login";
+
   const { loginGoogle } = useAuth();
 
   return (
-    <div className='pageLogin'>
+    <div className='loginPage'>
         <header>
             <h1>PurpleTasks</h1>
         </header>

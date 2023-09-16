@@ -21,6 +21,7 @@ const Task = () => {
     if(id){
       const dataTask = getOneTask(id);
       setData({ ...dataTask });
+      document.title = "Editar Tarefa"
     }else{
       setData({
         name: "",
@@ -28,6 +29,7 @@ const Task = () => {
         endTime: "",
         details: ""
       })
+      document.title = "Nova Tarefa"
     }
 
   }, [id, getOneTask])
