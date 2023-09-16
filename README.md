@@ -1,8 +1,14 @@
-# React + Vite
+<h1>PurpleTasks</h1>
+<p></p><strong>Recursos: </strong></p>
+<ul>
+  <li>ContextApi</li>
+  <li>Autenticação com Google</li>
+  <li>CRUD utilizando states & localStorage</li>
+  <li>Mensagens de feedback</li>
+</ul>
+<p></p><strong>Tecnologias: </strong></p>
+<ul>
+  <li>ReactJS com Vite</li>
+  <li>React OAuth2 | Google</li>
+</ul>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
