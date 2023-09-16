@@ -1,0 +1,97 @@
+.taskPage{
+    height: 100vh;
+}
+
+.titleTaskPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleTaskPage > div{
+    height: 100%;
+}
+
+.titleTaskPage a{
+    padding: 10px 40px;
+    color: #381750;
+    border: 1px solid #381750;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.titleTaskPage a:hover{
+    color: #fff;
+    background-color: #381750;
+}
+
+.taskPage main{
+    color: #381750;
+}
+
+.taskPage main > div{
+    padding: 64px;
+}
+
+.taskPage .tasks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer form{
+    width: 400px;
+}
+
+.formContainer > form > div + div{
+    margin-top: 18px;
+}
+
+.formContainer > form label{
+    margin-bottom: 4px;
+}
+
+.formContainer > form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #381750;
+    border: 1px solid #381750;
+    border-radius: 4px;
+    color: white;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.formContainer > form button:hover{
+    color: white;
+    background-color: #5b2780;
+    border: 1px solid #5b2780
+}
+
+@media (max-width: 767px){
+    .taskPage main > div{
+        padding: 44px 24px;
+    }
+
+    .taskPage .tasks{
+        gap: 44px;
+    }
+
+    .titleTaskPage {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        gap: 16px;
+    }
+
+}

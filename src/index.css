@@ -8,3 +8,58 @@
 html, body{
   height: 100%;
 }
+
+h1{
+  font-size: 44px;
+}
+
+h2{
+  font-size: 34px;
+}
+
+label{
+  display: block;
+  color: #000;
+}
+
+input{
+  padding: 10px;
+  border: 1px solid #381750;
+  border-radius: 4px;
+  color: #381750;
+  width: 100%;
+}
+
+input:focus{
+  outline-color: #381750;
+}
+
+.titlePage{
+  background-color: #F6F6F8;
+}
+
+.msg{
+  color: #381750;
+  border: 1px solid #d8c3e9;
+  background-color: #d8c3e9;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media(max-width: 767px){
+
+  h1{
+      font-size: 28px;
+  }
+  
+  h2{
+      font-size: 20px;
+  }
+
+  .titlePage{
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,199 @@
+.homePage{
+    height: 100vh;
+}
+
+.homePage main{
+    color: #381750;
+    padding-left: 300px;
+}
+
+.homePage main > div{
+    padding: 64px;
+}
+
+.logo{
+    display: none;
+}
+
+.homePage .titlePage{
+    background-color: #F6F6F8;
+}
+
+.homePage .tasks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.homePage .task{
+    width: 400px;
+    display: flex;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 16px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.homePage .task > span{
+    background-color: #381750;
+    align-self: stretch;
+    width: 20px;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.homePage .task > div{
+    width: 100%;
+    padding: 24px;
+    margin: 0;
+    color: #381750;
+}
+
+.homePage .task > div > h2{
+    color: #7A007A;
+}
+
+.homePage .task .taskInfo{
+    margin: 16px 0px;
+}
+
+.homePage .task .taskInfo p{
+    word-wrap: break-word;
+}
+
+.homePage .task .taskInfo p + p{
+    margin-top: 8px;
+}
+
+.homePage .taskButtons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.homePage .deleteTask{
+    color: #381750;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #381750;
+    transition: .5s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.homePage .deleteTask:hover{
+    color: #fff;
+    background-color: #381750;
+    border: 1px solid #381750;
+}
+
+.homePage .editTask{
+    color: #fff;
+    background-color: #7A007A;
+    padding: 10px 20px;
+    border: 1px solid #7A007A;
+    transition: .5s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.homePage .editTask:hover{
+    color: #fff;
+    background-color: #540054;
+    border: 1px solid #540054;
+}
+
+.homePage .navMobile{
+    display: none;
+    color: #fff;
+    background-color: #F6F6F8;
+    width: 100%;
+    padding: 16px 24px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.15);
+    justify-content: flex-end;
+
+}
+
+.homePage .navMobile > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.homePage .navMobile span{
+    width: 24px;
+    height: 24px;
+}
+
+.homePage .navMobile a{
+    color: white;
+    background-color: #7A007A;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.homePage .navMobile button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: #381750;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1292px) {
+
+    .homePage .tasks{
+        display: flex;
+    }
+    
+    .homePage .task{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .logo{
+        display: block;
+        color: #7A007A; 
+    }
+
+    .homePage main{
+        padding-left: 0px;
+        padding-bottom: 82px;
+    }
+
+    .homePage main > div{
+        padding: 44px 24px;
+    }
+
+    .homePage .tasks{
+        gap: 44px;
+    }
+
+    .homePage .deleteTask{
+        padding: 5px 20px;
+    }
+    
+    .homePage .editTask{
+        padding: 5px 20px;
+    }
+
+    .homePage .navMobile{
+        display: flex;
+    }
+    
+}
